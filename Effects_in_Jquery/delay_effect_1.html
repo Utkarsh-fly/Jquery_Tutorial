@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delay()</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		#div1{
+		width:100px;
+		 height: 100px;
+		 background-color: green;
+		 display: none;
+		 margin: 0 auto;
+		}
+
+		#div2{
+		width:100px;
+		 height: 100px;
+		 background-color: red;
+		 display: none;
+		 	 margin: 0 auto;
+		}
+
+		#div3{
+		width:100px;
+		 height: 100px;
+		 background-color: orange;
+		 display: none;
+		 	 margin: 0 auto;
+		}
+
+		#div4{
+		width:100px;
+		 height: 100px;
+		 background-color: blue;
+		 display: none;
+		 	 margin: 0 auto;
+		}
+	</style>
+
+</head>
+<body>
+		<h1>THIS IS FADING EFFECT with some DELAY</h1>
+
+	<button id="show">Click Here</button>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+		$("#show").click(function(){
+			$("#div1").delay("fast").fadeIn();
+			$("#div2").delay("slow").fadeIn();
+			$("#div3").delay(2000).fadeIn();
+			$("#div4").delay(3000).fadeIn();
+
+		})
+	});
+	</script>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+
+</body>
+</html>

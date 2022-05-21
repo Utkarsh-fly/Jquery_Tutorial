@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Effects In Jquery</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<p>This is statement number 1.</p>
+<script type="text/javascript">
+
+		//hide()
+
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide(3000);
+		})
+	});
+
+</script>
+
+<button id="hide">HIDE</button>
+</body>
+</html>

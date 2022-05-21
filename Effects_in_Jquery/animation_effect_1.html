@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Animation Effects </title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		body{text-align: center;}
+		#rec{
+			background-color: red;
+			height: 200px;
+			width: 200px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		// animate()
+
+		// Syntax==>
+		// $(selector).animate({params},speed,callback);
+
+		$(document).ready(function(){
+			$("#animate").click(function(){
+			$("#rec").animate({left:600});
+		})
+		})
+
+
+
+	</script>
+
+	<h1>This is Animate </h1>
+	<button id="animate">Click!</button>
+	<div id="rec"></div>
+
+</body>
+</html>

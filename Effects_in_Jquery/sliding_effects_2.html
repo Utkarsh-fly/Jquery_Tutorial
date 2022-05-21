@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Sliding Effects</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		body{text-align: center;}
+		#panel1,#panel2{
+			padding: 5px;
+			margin: 0 auto;
+			text-align: center;
+			background-color: lightgreen;
+			border: 1px solid #adadad;
+		}
+		#panel2{
+			padding: 50px;
+			/*display: none;*/
+		}
+	</style>
+		<script type="text/javascript">
+		
+		$(document).ready(function(){
+		$("#panel1").click(function(){
+			$("#panel2").slideUp(1000);
+		})
+	});
+
+	</script>
+
+</head>
+<body>
+
+	<h1>SlideUp</h1>
+	<div id="panel1">Click me to slide down panel2!</div>
+	<div id="panel2">Panel2!</div>
+
+</body>
+</html>

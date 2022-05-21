@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fading Effect</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		#div1{
+		width:100px;
+		 height: 100px;
+		 background-color: lightgreen;
+		 display: none;
+		 margin: 0 auto;
+		}
+
+		#div2{
+		width:100px;
+		 height: 100px;
+		 background-color: red;
+		 display: none;
+		 	 margin: 0 auto;
+		}
+
+		#div3{
+		width:100px;
+		 height: 100px;
+		 background-color: orange;
+		 display: none;
+		 	 margin: 0 auto;
+		}
+
+		#div4{
+		width:100px;
+		 height: 100px;
+		 background-color: lightblue;
+		 display: none;
+		 	 margin: 0 auto;
+		}
+	</style>
+
+</head>
+<body>
+		<h1>THIS IS FADING EFFECT</h1>
+
+	<button id="show">Click Here</button>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+		$("#show").click(function(){
+			$("#div1").fadeIn();
+			$("#div2").fadeIn("slow");
+			$("#div3").fadeIn(3000);
+			$("#div4").fadeIn(4000);
+
+		})
+	});
+	</script>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+
+</body>
+</html>

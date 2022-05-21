@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Global Selector</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>This is Example of JQuery.</h1>
+	<h2>This is h2 tag </h2>
+	<h3>This is h3 tag </h3>
+<p>This is 1st line</p>
+<p id="abc">This is 2nd line</p>
+<p class ="def">This is 3rd line</p>
+<p>This is 4th line</p>
+<p>This is 5th line</p>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{	$("*").css("background-color","green");
+		$("p").css("background-color","lightgreen");
+		$("#abc").css("background-color","yellow");
+		$(".def").css("background-color","orange");
+		$("h1,h2,h3").css("background-color","blue");
+	});
+
+</script>
+
+</body>
+</html>
